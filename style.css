@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Color Palette #1F2937 #F9FAF8 #E5E7EB #F9FAF8 #3882F6 #1F2937 #E5E7EB #E5E7EB */
+
+header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    padding: 1.4684287812041117vh 14.0625vw;
+}
+
+.logo h1{
+    color: #F9FAF8;
+    margin: 0px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 21.78125vw;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F9FAF8;
+    font-weight: 100;
+}
+
+nav ul li a {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #F9FAF8;
+    text-decoration: none;
+    padding: 1.4684287812041117vh 0.6vw;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    position: relative;
+}
+    
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F9FAF8;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+    
+nav ul li.active a:after,
+nav ul li a:hover:after {
+    transform: scaleX(0.3);
+}
+    
+nav ul li a:focus:after,
+nav ul li a:active:after {
+    transform: scaleX(0.9);
+}
+    
+nav ul li.active a:after {
+    transform: scaleX(0.9);
+}
+    
+.section1{
+    margin-top: 10.279001468428781vh;
+    background-color: #1f2937;
+    padding: 14.684287812041116vh 14.0625vw; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.awesome-text {
+    width: 35vw;
+    color: #F9FAF8;
+    font-size: 3em;
+    font-weight: bold;
+    justify-content: center;
+    margin: 0;
+    }
+
+.awesome-text p {
+    margin: 0;
+}
+
+.subtext {
+    font-size: 0.37em;
+    font-weight: 100;
+    margin: 0;
+    color: #E5E7EB;
+}
+
+.signup-button {
+    background-color: #3882F6;
+    color: #fff;
+    padding: 1.4684287812041117vh 2.734375vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.34em;
+}
+
+.signup-button:hover {
+    background-color: #2967D6;
+    color: #fff;
+}
+.square-box {
+    width: 32.8125vw;
+    height: 30.837004405286343vh;
+    background-color: #6d747e;
+}
+
+.section2 {
+    background: white;
+    padding: 5.873715124816447vh 14.0625vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.row-item {
+    display: flex;
+    gap: 3.90625vw;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 5.873715124816447vh;
+    font-size: 2.25em;
+    color: #1F2937;
+    font-weight: bolder;
+}
+
+.blue-border {
+    border: 4px solid #4783c9;
+    border-radius: 8px;
+    height: 19.823788546255507vh;
+    width: 10.546875vw;
+}
+
+.description {
+    width: 11.015625vw;
+    margin: 0.7342143906020558vh;
+}
+
+.section3 {
+    background: #e5e7ea;
+    padding: 14.684287812041116vh 19.53125vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.5em;
+    color: #1F2937;
+    margin: 0px;
+}
+
+.author {
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 0px;
+}
+
+.section4 {
+    padding: 11.747430249632894vh 14.0625vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.blue-box {
+    padding: 6.607929515418502vh 6.25vw;
+    background-color: #3b82f6;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10.9375vw;
+    align-items: center;
+}
+
+.signup-button2 {
+    background-color: #3b82f6;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 1.1747430249632893vh 2.34375vw;
+    color: #ffffff;
+}
+
+.signup-button2:hover {
+    background-color: #1e4bb0;
+    color: #ffffff; 
+    border-color: #1e4bb0;
+}
+
+.call-text {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.sub {
+    font-size: 1.125em;
+    font-weight: 100;
+    margin: 0px;
+}
+
+footer {
+    background: #1f2937;
+    padding: 3.2305433186490453vh 14.0625vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
