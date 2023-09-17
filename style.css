@@ -7,14 +7,16 @@ body {
 /* Color Palette #1F2937 #F9FAF8 #E5E7EB #F9FAF8 #3882F6 #1F2937 #E5E7EB #E5E7EB */
 
 header {
-    width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     position: fixed;
     z-index: 2;
     background-color: #1f2937;
     display: flex;
     align-items: center;
-    padding: 1.4684287812041117vh 14.0625vw;
+    justify-content: space-between;
+    padding: 17px 180px
 }
 
 .logo h1{
@@ -22,11 +24,19 @@ header {
     margin: 0px;
 }
 
+nav {
+    color: #F9FAF8;
+    font-weight: 100;
+    display: flex;
+}
+
 nav ul {
     list-style: none;
-    margin-left: 21.78125vw;
-    padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -37,7 +47,6 @@ nav a {
 
 nav ul li a {
     font-size: 1.3vw;
-    font-weight: bold;
     color: #F9FAF8;
     text-decoration: none;
     padding: 1.4684287812041117vh 0.6vw;
@@ -74,18 +83,18 @@ nav ul li.active a:after {
 }
     
 .section1{
-    margin-top: 10.279001468428781vh;
+    margin-top: 70px;
     background-color: #1f2937;
-    padding: 14.684287812041116vh 14.0625vw; 
+    padding: 100px 180px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .awesome-text {
-    width: 35vw;
+    width: 448px;
     color: #F9FAF8;
-    font-size: 3em;
+    font-size: 48px;
     font-weight: bold;
     justify-content: center;
     margin: 0;
@@ -96,7 +105,7 @@ nav ul li.active a:after {
 }
 
 .subtext {
-    font-size: 0.37em;
+    font-size: 18px;
     font-weight: 100;
     margin: 0;
     color: #E5E7EB;
@@ -105,11 +114,11 @@ nav ul li.active a:after {
 .signup-button {
     background-color: #3882F6;
     color: #fff;
-    padding: 1.4684287812041117vh 2.734375vw;
+    padding: 10px 35px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.34em;
+    font-size: 16px;
 }
 
 .signup-button:hover {
@@ -117,26 +126,26 @@ nav ul li.active a:after {
     color: #fff;
 }
 .square-box {
-    width: 32.8125vw;
-    height: 30.837004405286343vh;
+    width: 420px;
+    height: 210px;
     background-color: #6d747e;
 }
 
 .section2 {
     background: white;
-    padding: 5.873715124816447vh 14.0625vw; 
+    padding: 40px 180px; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .title {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: bold;
 }
 .row-item {
     display: flex;
-    gap: 3.90625vw;
+    gap: 50px;
 }
 
 .item {
@@ -147,8 +156,8 @@ nav ul li.active a:after {
 }
 
 .title {
-    margin-bottom: 5.873715124816447vh;
-    font-size: 2.25em;
+    margin-bottom: 40px;
+    font-size: 36px;
     color: #1F2937;
     font-weight: bolder;
 }
@@ -156,18 +165,18 @@ nav ul li.active a:after {
 .blue-border {
     border: 4px solid #4783c9;
     border-radius: 8px;
-    height: 19.823788546255507vh;
-    width: 10.546875vw;
+    height: 135px;
+    width: 135px;
 }
 
 .description {
-    width: 11.015625vw;
-    margin: 0.7342143906020558vh;
+    width: 141px;
+    margin: 5px;
 }
 
 .section3 {
     background: #e5e7ea;
-    padding: 14.684287812041116vh 19.53125vw; 
+    padding: 100px 250px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,7 +184,7 @@ nav ul li.active a:after {
 
 .quote {
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 24px;
     color: #1F2937;
     margin: 0px;
 }
@@ -187,7 +196,7 @@ nav ul li.active a:after {
 }
 
 .section4 {
-    padding: 11.747430249632894vh 14.0625vw; 
+    padding: 80px 180px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,21 +204,22 @@ nav ul li.active a:after {
 }
 
 .blue-box {
-    padding: 6.607929515418502vh 6.25vw;
+    padding: 45px 80px;
     background-color: #3b82f6;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10.9375vw;
+    gap: 9vw;
     align-items: center;
 }
 
 .signup-button2 {
+    width: 100px;
     background-color: #3b82f6;
     border: 2px solid #ffffff;
     border-radius: 8px;
-    padding: 1.1747430249632893vh 2.34375vw;
+    padding: 5px 10px;
     color: #ffffff;
 }
 
@@ -225,14 +235,14 @@ nav ul li.active a:after {
 }
 
 .sub {
-    font-size: 1.125em;
+    font-size: 18px;
     font-weight: 100;
     margin: 0px;
 }
 
 footer {
     background: #1f2937;
-    padding: 3.2305433186490453vh 14.0625vw; 
+    padding: 22px 180px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
